@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Color Combination
+#292966
+#5C5C99
+#A3A3CC
+#CCCCFF */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
