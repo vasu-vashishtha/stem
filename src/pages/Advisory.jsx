@@ -1,5 +1,7 @@
 import React from 'react';
 import njg from '../assets/njg.jpeg';
+import aruna from '../assets/aruna_verma.jpg';
+import monica from '../assets/monica_sharma.jpg';
 
 const advisoryCommittee = [
   {
@@ -15,12 +17,12 @@ const advisoryCommittee = [
   {
     name: "Dr. Aruna Verma ",
     designation: "LLRM",
-    image: ""
+    image: [aruna]
   },
   {
     name: "Dr. Monica Shamra ",
     designation: "Head-Pharmacology, LLRM",
-    image: ""
+    image: [monica]
   },
   {
     name: "Prof. Aradhana",
