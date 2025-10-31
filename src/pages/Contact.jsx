@@ -6,41 +6,23 @@ const Contact = () => {
     <>
       {/* Contact Details Section */}
       <div className="p-4">
-        <div className="max-w-3xl mx-auto bg-[#A3A3CC] shadow-2xl shadow-[#CCCCFF]-500/40 rounded-lg p-6">
-          <h2 className="text-2xl font-bold text-center text-[#292966] mb-6">
+        <div className="max-w-3xl mx-auto bg-[#FFF] shadow-2xl shadow-blue-500/40 rounded-lg p-6">
+          <h2 className="text-2xl font-bold text-center text-blue-500 mb-6">
             Contact Details
           </h2>
 
           <div className="space-y-4">
             {/* Email */}
-            <div className="flex items-center space-x-3 bg-[#CCCCFF] hover:bg-[#CCCCFF] p-3 rounded-lg transition duration-300">
-              <span><MdMarkEmailUnread className='text-xl text-[#292966]' /></span>
-              <a href="mailto:abc@gmail.com" className="text-[#292966] hover:text-[#5C5C99] font-medium">
-                email
+            <div className="flex items-center space-x-3 bg-blue-100 hover:bg-blue-200 p-3 rounded-lg transition duration-300">
+              <span><MdMarkEmailUnread className='text-xl text-blue-800' /></span>
+              <a href="mailto:mahilaadhyayankendra@ccsuniversity.ac.in" className="text-blue-800 hover:text-blue-800 font-medium">
+                mahilaadhyayankendra@ccsuniversity.ac.in
               </a>
             </div>
-
-            {/* Phone - Prof. Anil Kumar Malik */}
-            <div className="flex items-center space-x-3 bg-[#CCCCFF] hover:bg-[#CCCCFF] p-3 rounded-lg transition duration-300">
-              <span><MdCall className='text-xl text-[#292966]' /></span>
-              <a href="tel:+918368922050" className="text-[#292966] hover:text-[#5C5C99] font-medium">
-                <span className="text-sm text-[#5C5C99]">(Name)</span> <br/>Mob. no. 
-              </a>
-            </div>
-
-            {/* Phone - Dr. Neeraj Panwar */}
-            <div className="flex items-center space-x-3 bg-[#CCCCFF] hover:bg-[#CCCCFF] p-3 rounded-lg transition duration-300">
-              <span><MdCall className='text-xl text-[#292966]' /></span>
-              <a href="tel:+917726031844" className="text-[#292966] hover:text-[#5C5C99] font-medium">
-                <span className="text-sm text-[#5C5C99]">(Name)</span> <br/>Mob. no. 
-              </a>
-            </div>
-
-            {/* Phone - Dr. Yogendra K. Gautam */}
-            <div className="flex items-center space-x-3 bg-[#CCCCFF] hover:bg-[#CCCCFF] p-3 rounded-lg transition duration-300">
-              <span><MdCall className='text-xl text-[#292966]' /></span>
-              <a href="tel:+919149324785" className="text-[#292966] hover:text-[#5C5C99] font-medium">
-                <span className="text-sm text-[#5C5C99]">(Name)</span> <br/>Mob. no.
+            <div className="flex items-center space-x-3 bg-blue-100 hover:bg-blue-200 p-3 rounded-lg transition duration-300">
+              <span><MdCall className='text-xl text-blue-800' /></span>
+              <a href="mailto:mahilaadhyayankendra@ccsuniversity.ac.in" className="text-blue-800 hover:text-blue-800 font-medium">
+                +91 75348 13143
               </a>
             </div>
           </div>

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { AiOutlineHome, AiOutlineInfoCircle, AiOutlineMenu, AiOutlineClose, AiOutlineTeam, AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 import { IoMdContacts } from "react-icons/io";
 import { FaRegRegistered } from "react-icons/fa";
+import stem from '../assets/Stem.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#292966] text-[#CCCCFF] shadow-sm fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-[#FFF] text-blue-500 shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Title */}
-          <div className="flex-shrink-0">
+          <div className="flex gap-2.5 flex-shrink-0">
+            <img src={stem} alt='stem' width={30}/>
             <h1 className="text-xl font-bold">STEM</h1>
           </div>
 
@@ -33,8 +35,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
                 }
               >
@@ -46,8 +48,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
                 }
               >
@@ -58,19 +60,21 @@ const Navbar = () => {
               <div className="relative">
                 <button
                   onClick={toggleMembers}
-                  className="flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF] focus:outline-none"
+                  className="flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-500 hover:bg-blue-100 hover:text-blue-500 focus:outline-none"
                 >
                   <AiOutlineTeam className="mr-2" />
                   Members
                   {isMembersOpen ? <AiOutlineUp className="ml-1" /> : <AiOutlineDown className="ml-1" />}
                 </button>
                 {isMembersOpen && (
-                  <div className="absolute left-0 mt-2 w-48 bg-[#292966] rounded-md shadow-lg z-10">
+                  <div className="absolute left-0 mt-2 w-48 bg-[#FFF] rounded-md shadow-lg z-10">
                     <NavLink
                       to="/organizing-committee"
                       className={({ isActive }) =>
-                        `block px-4 py-2 text-sm text-[#CCCCFF] hover:bg-[#5C5C99] transition-colors duration-200 ${
-                          isActive ? 'bg-[#5C5C99]' : ''
+                        `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                          isActive
+                            ? 'bg-blue-100 text-blue-500'
+                            : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                         }`
                       }
                       onClick={() => setIsMembersOpen(false)}
@@ -80,10 +84,12 @@ const Navbar = () => {
                     <NavLink
                       to="/advisory-committee"
                       className={({ isActive }) =>
-                        `block px-4 py-2 text-sm text-[#CCCCFF] hover:bg-[#5C5C99] transition-colors duration-200 ${
-                          isActive ? 'bg-[#5C5C99]' : ''
-                        }`
-                      }
+                      `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                        isActive
+                          ? 'bg-blue-100 text-blue-500'
+                          : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
+                      }`
+                    }
                       onClick={() => setIsMembersOpen(false)}
                     >
                       Advisory Committee
@@ -96,8 +102,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
                 }
               >
@@ -109,8 +115,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
                 }
               >
@@ -124,7 +130,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="bg-gray-200 inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="bg-gray-200 inline-flex items-center justify-center p-2 rounded-md text-blue-500 hover:text-blue-600 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
               aria-expanded="false"
             >
               {isOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
@@ -143,10 +149,10 @@ const Navbar = () => {
               className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
-              }
+                }
             >
               <AiOutlineHome className="mr-2" />
               Home
@@ -157,10 +163,10 @@ const Navbar = () => {
               className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
-              }
+                }
             >
               <AiOutlineInfoCircle className="mr-2" />
               About
@@ -181,10 +187,12 @@ const Navbar = () => {
                     to="/organizing-committee"
                     onClick={() => { setIsOpen(false); setIsMembersOpen(false); }}
                     className={({ isActive }) =>
-                      `block px-4 py-2 text-sm text-[#CCCCFF] hover:bg-[#5C5C99] transition-colors duration-200 rounded-md ${
-                        isActive ? 'bg-[#5C5C99]' : ''
-                      }`
-                    }
+                  `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                    isActive
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
+                  }`
+                }
                   >
                     Organizing Committee
                   </NavLink>
@@ -192,10 +200,12 @@ const Navbar = () => {
                     to="/advisory-committee"
                     onClick={() => { setIsOpen(false); setIsMembersOpen(false); }}
                     className={({ isActive }) =>
-                      `block px-4 py-2 text-sm text-[#CCCCFF] hover:bg-[#5C5C99] transition-colors duration-200 rounded-md ${
-                        isActive ? 'bg-[#5C5C99]' : ''
-                      }`
-                    }
+                    `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      isActive
+                        ? 'bg-blue-100 text-blue-500'
+                        : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
+                    }`
+                  }
                   >
                     Advisory Committee
                   </NavLink>
@@ -208,10 +218,10 @@ const Navbar = () => {
               className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
-              }
+                }
             >
               <FaRegRegistered className="mr-2" />
               Registration
@@ -222,8 +232,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'bg-[#5C5C99] text-[#CCCCFF]'
-                      : 'text-[#CCCCFF] hover:bg-[#5C5C99] hover:text-[#CCCCFF]'
+                      ? 'bg-blue-100 text-blue-500'
+                      : 'text-blue-500 hover:bg-blue-100 hover:text-blue-500'
                   }`
                 }
               >

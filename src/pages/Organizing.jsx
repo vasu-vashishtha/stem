@@ -81,7 +81,7 @@ const Organizing = () => {
         {Object.entries(members).map(([category, people]) => (
           <div key={category}>
             {/* Category Title */}
-            <h3 className="text-3xl font-semibold text-[#5C5C99] mb-8 text-center">
+            <h3 className="text-3xl font-semibold text-blue-500 mb-8 text-center">
               {category}
             </h3>
 
@@ -90,17 +90,17 @@ const Organizing = () => {
               {people.map((person, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-white rounded-2xl shadow-lg shadow-blue-400/40 p-6 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <img
                     src={person.image}
                     alt={person.name}
-                    className="w-36 h-36 rounded-full object-fill mb-4 border-4 border-[#A3A3CC]"
+                    className="w-36 h-36 rounded-full object-fill mb-4 border-4 border-blue-200"
                   />
-                  <h4 className="text-lg font-semibold text-gray-800">
+                  <h4 className="text-lg font-semibold text-black">
                     {person.name}
                   </h4>
-                  <p className="text-[#5C5C99] font-medium">{person.designation}</p>
+                  <p className="text-blue-500 font-medium">{person.designation}</p>
                 </div>
               ))}
             </div>

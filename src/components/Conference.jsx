@@ -1,10 +1,27 @@
 import React from 'react';
 import stem from '../assets/Stem.png';
+import flyGirl from '../assets/fly-girl.jpg';
+import ccsu from '../assets/CCSU-Logo.jpg';
+import icssr from '../assets/icssr.png';
+import shakti from '../assets/mission-shakti-logo.png';
+import nirf from '../assets/nirf.jpeg';
+import usha from '../assets/PM-UShA.png';
+import sdg from '../assets/SDG.png';
+import uttar from '../assets/pic11.png';
 
 const Conference = () => {
   return (
     <>
-       <div className='text-center text-2xl font-semibold text-[#292966] mt-4'>About the Conference</div>
+       <div className='text-center text-2xl font-semibold text-blue-500 mt-4'>About the Conference</div>
+       <div className='w-full md:w-auto flex flex-wrap gap-4 justify-center items-center p-4'>
+          <img src={uttar} alt='pic1' width={150} height={150}/>
+          <img src={shakti} alt='pic2' width={150} height={150}/>
+          <img src={sdg} alt='pic3' width={150} height={150}/>
+          <img src={ccsu} alt='pic4' width={150} height={150}/>
+          <img src={nirf} alt='pic5' width={150} height={150}/>
+          <img src={usha} alt='pic6' width={150} height={150}/>
+          <img src={icssr} alt='pic7' width={150} height={150}/>
+       </div>
              <div className='w-full flex flex-col md:flex-row justify-center items-center p-4 gap-6 mt-2'>
                <div className='w-full md:w-[50%]'>
                  <p className='text-justify text-[18px]'>
@@ -25,8 +42,9 @@ const Conference = () => {
                    <li>•	 To promote best practices and strategies to integrate well-being into STEM education, research as well as careers.</li>
                  </ul>
                </div>
-               <div className='w-full md:w-auto'>
-                 <img src={stem} alt='stem' className='w-full max-w-sm mx-auto md:mx-0'/>
+               <div className='w-full md:w-auto flex flex-col md:flex-col gap-3'>
+                  <img src={stem} alt='stem' className=''/>
+                  <img src={flyGirl} alt='flyGirl' className=''/>
                </div>
              </div>
     </>

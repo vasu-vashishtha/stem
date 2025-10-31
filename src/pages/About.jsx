@@ -1,13 +1,13 @@
 import React from 'react';
 import stem from '../assets/Stem.png';
 import ccsu from '../assets/ccsumaingate.jpg';
-import mission from '../assets/mission-shakti.jpg'
+import mission from '../assets/mission-shakti-logo.png';
 
 
 const About = () => {
   return (
     <>
-      <div className='text-center text-2xl font-semibold text-[#292966] mt-4'>About the Conference</div>
+      <div className='text-center text-2xl font-semibold text-blue-500 mt-4'>About the Conference</div>
       <div className='w-full flex flex-col-reverse md:flex-row justify-center items-center p-4 gap-10 mt-2'>
         <div className='w-full md:w-[60%]'>
           <p className='text-justify text-[18px]'>
@@ -33,7 +33,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='text-center text-2xl font-semibold text-[#292966] mt-6'>About the University</div>
+      <div className='text-center text-2xl font-semibold text-blue-500 mt-6'>About the University</div>
       <div className='w-full flex flex-col md:flex-row justify-center items-center p-4 gap-8 mt-2'>
         <div className='w-full md:w-auto'>
           <img src={ccsu} alt='ccsu' className='w-full max-w-md mx-auto md:mx-0 rounded-2xl'/>
@@ -58,7 +58,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='text-center text-2xl font-semibold text-[#292966] mt-6'>About Mahila Adhyayan Kendra (महिला अध्ययन केंद्र)</div>
+      <div className='text-center text-2xl font-semibold text-blue-500 mt-6'>About Mahila Adhyayan Kendra (महिला अध्ययन केंद्र)</div>
       <div className='w-full flex flex-col-reverse md:flex-row justify-center items-center p-4 gap-8 mt-2'>
         <div className='w-full md:w-[60%]'>
           <p className='text-justify text-[18px]'>

@@ -10,7 +10,7 @@ const HeroSection = () => {
     <>
         <div className='w-full p-4 flex flex-col-reverse md:flex-row justify-center gap-3'>
             <div className=' p-4 text-center flex justify-center items-center'>
-                <p className='text-[20px] text-[#292966]'>
+                <p className='text-[20px] text-blue-500'>
                     <span className='text-[28px]'>Indian Council for Social Science Research</span><br/>
                     <span className='italic'>Sponsored</span><br/>
                     <span className='text-[24px]'>National Conference</span><br/>
@@ -36,15 +36,15 @@ const HeroSection = () => {
             </div>
         </div>
         {/* Strip */}
-        <div className="w-full bg-[#5C5C99] text-[#A3A3CC] py-2 overflow-hidden">
+        <div className="w-full bg-blue-200 text-blue-500 py-2 overflow-hidden">
           <div className="marquee">
-            <span className="text-white text-lg font-medium">
+            <span className=" text-lg font-medium">
               📅 Date: November 18th, 2025 Tuesday
             </span>
-            <span className="text-white text-lg font-medium">
+            <span className=" text-lg font-medium">
               📍 Venue: CCSU Campus, Meerut
             </span>
-            <span className="text-white text-lg font-medium">
+            <span className=" text-lg font-medium">
               🎯 Theme: National Conference on Empowering the Health of Women in Science Technology Engineering & Management: Fostering the Well Being
             </span>
           </div>
