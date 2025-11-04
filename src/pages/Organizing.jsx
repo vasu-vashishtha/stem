@@ -1,4 +1,5 @@
 import React from 'react'
+import nidhi from "../assets/nidhi.jpeg";
 
 const members = {
   Patron: [
@@ -69,6 +70,11 @@ const members = {
       name: "Dr. Renu Garg",
       image: "https://scriet.ccsuniversity.ac.in/assets/images/prof/as-ranu.jpg",
       designation: "SCRIET, CCSU, Meerut"
+    },
+    {
+      name: "Dr. Nidhi Chaudhary",
+      image: [nidhi],
+      designation: "Dept. of Home Science"
     },
   ],
 };
