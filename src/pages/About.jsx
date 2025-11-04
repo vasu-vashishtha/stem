@@ -58,7 +58,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='text-center text-2xl font-semibold text-blue-500 mt-6'>About Mahila Adhyayan Kendra (महिला अध्ययन केंद्र)</div>
+      <div className='text-center text-2xl font-semibold text-blue-500 mt-6'>Mahila Adhyayan Kendra</div>
       <div className='w-full flex flex-col-reverse md:flex-row justify-center items-center p-4 gap-8 mt-2'>
         <div className='w-full md:w-[60%]'>
           <p className='text-justify text-[18px]'>
