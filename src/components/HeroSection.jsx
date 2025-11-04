@@ -24,7 +24,7 @@ const HeroSection = () => {
                         (Established under Mission Shakti, an initiative by UP Govt.)<br/>
                         Chaudhary Charan Singh University<br/>
                         Ramgarhi, Meerut, Uttar Pradesh 250004<br/>
-                        website: www.ccsuniversity.ac.in
+                        website: <a href='https://www.ccsuniversity.ac.in/' target='_blank'>www.ccsuniversity.ac.in</a>
                     </span>
                 </p>
             </div>

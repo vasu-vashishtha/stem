@@ -17,7 +17,7 @@ const advisoryCommittee = [
   },
   {
     name: "Dr. Aruna Verma ",
-    designation: "LLRM",
+    designation: "Professor & Unit Head, Department of gynecology, LLRM medical college",
     image: aruna
   },
   {
