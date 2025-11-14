@@ -67,7 +67,7 @@ const members = {
       designation: "SCRIET, CCSU, Meerut"
     },
     {
-      name: "Dr. Renu Garg",
+      name: "Dr Ranu Agrawal",
       image: "https://scriet.ccsuniversity.ac.in/assets/images/prof/as-ranu.jpg",
       designation: "SCRIET, CCSU, Meerut"
     },
